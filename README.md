@@ -27,8 +27,19 @@ npm start
 
 - A basic CRUD based on a single entity called "Article"
 - The attributes defined for this "Article" entity are: title (String, required), description (String, optional) and published (Boolean, optional)
-
+- A basic unit testing added using Mocha, Sinon and Chai
+  
 # Endpoints
+
+#### /article
+Path | Method | Description
+---|---|---
+/article | POST | Add a new article
+/article/:id | GET | Get article detail
+/article/:id | PUT | Update article
+/article/:id | DELETE | Delete an article
+/articles | GET | get all articles (Allows to filter by title, paging included: page= 0, size=5 as default)
+/articles/published | GET | get all published articles
 
 ## Contributions
 
