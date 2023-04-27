@@ -29,7 +29,7 @@ npm start
 - The attributes defined for this "Article" entity are: title (String, required), description (String, optional) and published (Boolean, optional)
 - A basic unit testing added using Mocha, Sinon and Chai
   
-# Endpoints
+## Endpoints
 
 #### /article
 Path | Method | Description
