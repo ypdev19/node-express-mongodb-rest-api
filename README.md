@@ -77,10 +77,6 @@ Just 3 basic tests added just to get familiar about how tests are done:
 - Get Article detail info based on the given ID
 - Return an error if there is no article found with provided ID
 
-## Contributions
-
-Pull requests are welcome but please open an issue first since i would like to get some inside about what change you're introducing and why.
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
