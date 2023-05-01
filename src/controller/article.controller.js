@@ -8,7 +8,7 @@ const {
   findAllArticles,
   findAllPublished,
   updateArticle,
-} = require("../services/article.service");
+} = require("../service/article.service");
 
 // Create a new Article
 router.post("/article", async (req, res, next) => {

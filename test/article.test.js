@@ -1,11 +1,11 @@
 const { expect } = require("chai");
 const sinon = require("sinon");
 
-const Article = require("../src/models/article.model");
+const Article = require("../src/entity/article.entity");
 const {
   addArticle,
   findArticleById,
-} = require("../src/services/article.service");
+} = require("../src/service/article.service");
 
 describe("Article Service unit testing", function () {
   this.afterEach(() => {

@@ -1,4 +1,4 @@
-const Article = require("../models/article.model");
+const Article = require("../entity/article.entity");
 
 const addArticle = async (body) => {
   const article = new Article({
