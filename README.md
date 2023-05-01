@@ -49,7 +49,10 @@ npm test
 
 - A basic CRUD based on a single entity called "Article"
 - The attributes defined for this "Article" entity are: title (String, required), description (String, optional) and published (Boolean, optional)
-- A basic unit testing added using Mocha, Sinon and Chai
+- Project structure is:
+    - model (where the entity/object is located)
+    - service (all the business logic)
+    - controller (the actual API routing) 
   
 ## Endpoints
 
