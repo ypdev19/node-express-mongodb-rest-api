@@ -8,6 +8,7 @@ A basic Restful API just as a practical purpose to get familiar with how node an
 - NodeJS 
 - Express 
 - Mongoose
+- Mongoose paginate v2
 - MongoDB
 
 ## Installation
