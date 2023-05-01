@@ -16,14 +16,14 @@ describe("Article Service unit testing", function () {
     it("Should successfully add an article", async function () {
       const article = {
         title: "article test",
-        description: "345sdfghnm2",
+        description: "article test description",
         published: false,
       };
 
       sinon.stub(Article.prototype, "save").returns(article);
       const returnedArticle = await addArticle(article);
       expect(returnedArticle.title).to.equal("article test");
-      expect(returnedArticle.description).to.equal("345sdfghnm2");
+      expect(returnedArticle.description).to.equal("article test description");
     });
   });
 
