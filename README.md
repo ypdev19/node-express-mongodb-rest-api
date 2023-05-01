@@ -12,12 +12,25 @@ A basic Restful API just as a practical purpose to get familiar with how node an
 
 ## Installation
 
-In root directory go with
+1. Install dependencies
+
+To install dependencies got to root directory and execute
 
 ```bash
 npm install
 ```
-and then
+
+2. Database and port configuration
+
+In root directory create a ```.env``` file and add the property ```DATABASE_URL```
+
+You could also add ```PORT``` (only if you need it to run on a specific port)
+
+You can check the configuration for this on ```db.config.js``` in ```config``` folder, if a port is not specified, it will run on 8080 by default.
+
+If you don't want/need to use the ```.env``` file then just edit the ```db.config.js``` as you need.
+
+3. To run the API execute
 
 ```bash
 npm start
