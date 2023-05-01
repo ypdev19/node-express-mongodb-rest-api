@@ -12,7 +12,7 @@ A basic Restful API just as a practical purpose to get familiar with how node an
 
 ## Installation
 
-1. Install dependencies
+### Install dependencies
 
 To install dependencies got to root directory and execute
 
@@ -20,7 +20,7 @@ To install dependencies got to root directory and execute
 npm install
 ```
 
-2. Database and port configuration
+### Database and port configuration
 
 In root directory create a ```.env``` file and add the property ```DATABASE_URL```
 
@@ -30,10 +30,18 @@ You can check the configuration for this on ```db.config.js``` in ```config``` f
 
 If you don't want/need to use the ```.env``` file then just edit the ```db.config.js``` as you need.
 
-3. To run the API execute
+### To run the API execute
 
 ```bash
 npm start
+```
+
+### To run the tests
+
+On test folder execute
+
+```bash
+npm test
 ```
 
 ## Insides
@@ -53,6 +61,16 @@ Path | Method | Description
 /article/:id | DELETE | Delete an article
 /articles | GET | get all articles (Allows to filter by title, paging included: page= 0, size=5 as default)
 /articles/published | GET | get all published articles
+
+## Tests
+
+Technologies used: mocha, chai and sinon
+
+Just 3 basic tests added just to get familiar about how tests are done:
+
+- Add an article
+- Get Article detail info based on the given ID
+- Return an error if there is no article found with provided ID
 
 ## Contributions
 
