@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 
 const app = express();
-const routes = require('./src/routes/article.route');
+const routes = require('./src/controller/article.controller');
 const config = require('./src/config/db.config');
 
 mongoose.connect(config.url);
