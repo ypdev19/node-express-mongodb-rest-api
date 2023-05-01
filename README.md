@@ -50,7 +50,7 @@ npm test
 - A basic CRUD based on a single entity called "Article"
 - The attributes defined for this "Article" entity are: title (String, required), description (String, optional) and published (Boolean, optional)
 - Project structure is:
-    - model (where the entity/object is located)
+    - entity (where the entity/object is located)
     - service (all the business logic)
     - controller (the actual API routing) 
   
@@ -76,10 +76,6 @@ Just 3 basic tests added just to get familiar about how tests are done:
 - Add an article
 - Get Article detail info based on the given ID
 - Return an error if there is no article found with provided ID
-
-## Contributions
-
-Pull requests are welcome but please open an issue first since i would like to get some inside about what change you're introducing and why.
 
 ## License
 
