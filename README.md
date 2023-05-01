@@ -52,7 +52,8 @@ npm test
   
 ## Endpoints
 
-#### /article
+### /article
+
 Path | Method | Description
 ---|---|---
 /article | POST | Add a new article
@@ -64,7 +65,7 @@ Path | Method | Description
 
 ## Tests
 
-Technologies used: mocha, chai and sinon
+Technologies used: ```mocha```, ```chai``` and ```sinon```
 
 Just 3 basic tests added just to get familiar about how tests are done:
 
