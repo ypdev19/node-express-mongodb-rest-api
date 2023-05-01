@@ -9,7 +9,7 @@ const Article = new mongoose.Schema({
     { timestamps: true }
 );
 
-//Replace the _id by id in the final response
+//Replaces the _id by id in the final response
 Article.method("toJSON", function() {
   const { __v, _id, ...object } = this.toObject();
   object.id = _id;
@@ -18,19 +18,5 @@ Article.method("toJSON", function() {
 
 //add pagination to schema
 Article.plugin(pagination);
-
-//TODO: Try ‘virtuals’ as alternative to replace _id by id
-// ‘virtuals’, which are essentially fake fields that Mongoose creates. 
-// They’re not stored in the DB, they just get populated at run time
-
-// Duplicate the ID field.
-// Schema.virtual('id').get(function() {
-//   return this._id.toHexString();
-// });
-
-// Ensure virtual fields are serialised.
-// Schema.set('toJSON', {
-//   virtuals: true
-// });
 
 module.exports = mongoose.model('Article', Article);
