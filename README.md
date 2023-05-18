@@ -15,7 +15,7 @@ A basic Restful API just as a practical purpose to get familiar with how node an
 
 ### Install dependencies
 
-To install dependencies got to root directory and execute
+To install dependencies go to root directory and execute
 
 ```bash
 npm install
